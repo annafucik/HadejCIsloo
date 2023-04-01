@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="program.js"></script>
+	<title>Guess the number!</title>
+</head>
+
+<body>
+	<h1 id="message">Can you guess the secret number?</h1>
+
+	<main>
+		<div class="how-to-play">
+			<h2>How to play</h2>
+			<ul>
+				<li>Guess the secret number between 1 and 100.</li>
+				<li>If you guess an incorrect number, you will get a hint.</li>
+				<li>If you guess the correct number, you win!</li>
+			</ul>
+		</div>
+
+		<div class="secret-number">
+			<h2>Secret number</h2>
+			<div>
+				<div id="left-number">1</div>
+				<div>≤</div>
+				<img id="star" src="star.svg" />
+				<div>≤</div>
+				<div id="right-number">100</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="input-section">
+		<label for="number-input">Number between 1 and 100:</label>
+		<input id="number-input" type="number" min="1" max="100" placeholder="55" />
+		<button id="submit-button">Guess</button>
+		<button id="play-again-button" class="hiddenElement">Play again</button>
+	</div>
+</body>
+
+</html>

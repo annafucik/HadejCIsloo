@@ -1,0 +1,117 @@
+/* --- Nastavení box-sizing bez bližšího komentáře --- */
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+/* --------------------------------------------------- */
+
+html {
+	background-color: pink;
+	color: white;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 3rem 0;
+}
+
+h2,
+button {
+	text-transform: uppercase;
+}
+
+h2,
+label {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	margin: 0 3rem;
+}
+
+.how-to-play,
+.secret-number,
+.input-section {
+	background-color: white;
+	color: #1b1464;
+}
+
+.how-to-play,
+.secret-number {
+	height: 20rem;
+	width: 100%;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.how-to-play ul {
+	margin-top: 2rem;
+	padding-left: 0;
+}
+
+.how-to-play li {
+	margin-top: 1rem;
+	font-size: 1.67rem;
+	list-style-type: none;
+}
+
+.secret-number > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin-top: 2rem;
+	font-size: 3rem;
+}
+
+#left-number,
+#right-number {
+	width: 6rem;
+}
+
+.input-section {
+	width: 100%;
+	height: 12rem;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+#number-input {
+	width: 12rem;
+	height: 5rem;
+	background-color: pink;
+	color: white;
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+button {
+	width: 20rem;
+	height: 5rem;
+	background-color: #00ffc4;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+#play-again-button {
+	background-color: hotpink;
+}
+
+.hiddenElement {
+	display: none;
+}
